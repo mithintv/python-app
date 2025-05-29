@@ -47,11 +47,23 @@ These files are:
 
 - **mysite/wsgi.py**: An entry-point for WSGI-compatible web servers to serve your project. See [How to deploy with WSGI](https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/) for more details.
 
-## Create django python package
+## Create django apps
 
 ```sh
-python manage.py startapp polls
+python manage.py startapp <app_name>
 ```
+
+## Database configuration
+
+See [here](https://docs.djangoproject.com/en/5.2/topics/install/#database-installation)
+
+### Migrations
+
+Change your models (in models.py).
+
+Run `python manage.py makemigrations` to create migrations for those changes
+
+Run `python manage.py migrate` to apply those changes to the database.
 
 ## Run
 
