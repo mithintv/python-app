@@ -12,7 +12,7 @@ Run the following to confirm installation was successful.
 python -m django --version
 ```
 
-## Create project
+## Django Modules
 
 ```sh
 django-admin startproject mysite django
@@ -47,10 +47,21 @@ These files are:
 
 - **mysite/wsgi.py**: An entry-point for WSGI-compatible web servers to serve your project. See [How to deploy with WSGI](https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/) for more details.
 
-## Create django apps
+### Create django apps
 
 ```sh
 python manage.py startapp <app_name>
+```
+
+### Shell API
+
+```sh
+python manage.py shell
+```
+
+### Admin User
+```sh
+python manage.py createsuperuser
 ```
 
 ## Database configuration
